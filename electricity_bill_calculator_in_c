@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int unitconsumed ;
+    printf(" ");
+    scanf("%d" , &unitconsumed);
+    int costperunit  ; 
+    printf(" "); 
+    scanf("%d" , &costperunit);
+    int i , totalbill = 1;
+    if (unitconsumed < 500 && unitconsumed >1 && costperunit < 10 && costperunit > 1){
+        for (i =0 ; i < costperunit ; i++ ){
+            totalbill *= unitconsumed;
+        }
+        printf("%d" , totalbill);
+    } else {
+        printf("Invalid input ");
+    }
+	return 0;
+}
