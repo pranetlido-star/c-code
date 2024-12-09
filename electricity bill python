@@ -1,0 +1,11 @@
+unitconsumed = int(input(" "))
+costperunit = int(input(" "))
+
+totalbill = 1
+
+if 1 < unitconsumed < 500 and 1 < costperunit < 10:
+    for i in range(costperunit):
+        totalbill *= unitconsumed
+    print(totalbill)
+else:
+    print("Invalid input")
